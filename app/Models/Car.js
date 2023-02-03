@@ -19,14 +19,14 @@ export class Car {
       <img
         src="${this.imgUrl}"
         alt="${this.make}" class="rounded">
-      <p><b>${this.make} ${this.model} - $${this.price}</b></p>
+      <p><b>${this.year} ${this.make} ${this.model} - $${this.price}</b></p>
     </div>
   </div>
     `
   }
 
 
-  get CarDetailsTemplate(){
+  get CarDetailsTemplate() {
     return /*html*/`
       <div>
         <button class="btn btn-danger" data-bs-dismiss="modal" onclick="app.carsController.deleteCar('${this.id}')">DELETE THE CAR!!!!!</button>
